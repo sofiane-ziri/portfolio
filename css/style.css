@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=IBM+Plex+Sans:wght@700&family=Roboto:wght@900&family=Syne+Mono&display=swap');
 body {
     margin: 0;
@@ -6,133 +7,167 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
 
 }
-a{
-    style: none;
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
-
-
-
-
-
-/* body  body  body  body  body  body  body  body  body  body  */
-
-
 body h1 {
-    text-align: center;
-    font-size: 65px;
-    padding: 50px;
-    color: white;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 65px;
+  padding: 50px;
+  color: white;
+  text-transform: uppercase;
 }
 
-#secondSection{
+#title_dynamic_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+
+}
+#projets-Section h2 , #icon-Section h2  {
+  padding: 110px;
+}
+#description h2 
+{
+padding: 110px 110px 0px 110px;
+}
+
+#description > p , #projets-Section > p , #contact-Section > p {
+padding: 5% 8% 12% 8%;
+text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+}
+
+.dynamic_text h1 {
+  position: relative;
+}
+
+.dynamic_text h1::before,
+.dynamic_text h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.dynamic_text h1::before {
+  background: black;
+  animation: typing 2s steps(13) forwards 2s;
+}
+
+.dynamic_text h1::after {
+  background: white;
+  width: 0.125em;
+  animation: typing 2s steps(13) forwards 2s, blinking 750ms steps(13) infinite;
+}
+
+@keyframes typing {
+  to {
+      left: 100%;
+  }
+}
+
+@keyframes blinking {
+  to {
+      background: black;
+  }
+}
+
+body p {
+  padding: 0 50px;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+body .parallax {
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: white;
+  letter-spacing: 25px;
+}
+
+body .parallax h2 {
+  background: #f5f5f566;
+  padding-left: 20px;
+  white-space: break-spaces;
+  text-align: center;
+  font-size: 72px;
+  
+}
+
+body .firstPara {
+  background-image: url("../includes/images/background/xK.gif");
+}
+
+body .secondPara {
+  background-image: url('../includes/images/background/3YDc.gif');
+}
+
+body .thirdPara {
+  background-image: url('../includes/images/background/AcU9.gif');
+}
+
+body .forthPara {
+  background-image: url('../includes/images/parallax/');
+}  
+
+/* SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  SECTIONS  */
+
+
+
+
+#icon-Section { background: white;
+  margin: 0;
+  padding: 32px 8px 18px 8px;
+  font-size: 39px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  text-align: center;}
+
+  #icon-Section > p {
+    padding: 8% 8% 12% 8%;
+    text-align: center;
+      font-size: 23px;
+      font-weight: bold;
+      color: black;
+
+  }
+  #contact-Section
+  {
     background: white;
     margin: 0;
-    padding: 33px 33px 160px 33px;
+    padding: 18%;
     font-size: 39px;
     text-transform: uppercase;
     letter-spacing: 12px;
     text-align: center;
 }
-#title_dynamic_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 75vh;
 
-}
-#secondSection h2{
-    padding: 110px;
-}
-#secondSection > p{
-    text-align: center;
-    font-size: 23px;
-    font-weight: bold;
-    color: black;
-}
-
-.dynamic_text h1 {
-    position: relative;
-}
-
-.dynamic_text h1::before,
-.dynamic_text h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.dynamic_text h1::before {
-    background: black;
-    animation: typing 2s steps(13) forwards 2s;
-}
-
-.dynamic_text h1::after {
+#projets-Section , #description  {
     background: white;
-    width: 0.125em;
-    animation: typing 2s steps(13) forwards 2s, blinking 750ms steps(13) infinite;
-}
-
-@keyframes typing {
-    to {
-        left: 100%;
-    }
-}
-
-@keyframes blinking {
-    to {
-        background: black;
-    }
-}
-
-body p {
-    padding: 0 50px;
-    font-size: 18px;
-    line-height: 2em;
-}
-
-body .parallax {
-    min-height: 350px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 100px;
-    color: white;
-    letter-spacing: 25px;
-}
-
-body .parallax h2 {
-    background: #f5f5f566;
-    padding-left: 20px;
-    white-space: break-spaces;
+    margin: 0;
+    padding: 33px 33px 33px 33px;
+    font-size: 39px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
     text-align: center;
-    font-size: 72px;
 }
 
-body .firstPara {
-    background-image: url("../includes/images/parallax/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
-}
-
- body .secondPara {
-    background-image: url('../includes/images/parallax/tianyi-ma-WiONHd_zYI4-unsplash.jpg');
-}
-
- body .thirdPara {
-    background-image: url('../includes/images/parallax/miguel-alcantara-_HEqJviJ7KY-unsplash.jpg');
-}
-
-body .forthPara {
-    background-image: url('../includes/images/parallax/');
-}  
 /* SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  SCROLL-ANIMATION  */
 
 .scroll-downs {
@@ -197,10 +232,11 @@ body .forthPara {
   margin-bottom: 30px;
   border-radius: 5px;
 }
-/* .box:hover
+.box:hover
 {
  transform:scale(1.2);
-} */
+ border-radius: 70%;
+}
 .box .percent
 {
   width:150px;
@@ -289,9 +325,8 @@ body .forthPara {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../includes/images/background/5GpD.gif");
-    background-size: 25%;
-}
+    background-image: url("../includes/images/background/5GpD.gif") !important;
+  }
 
 .subcontent {
     display: flex;
@@ -330,9 +365,10 @@ i {
     display: grid;
     grid-template-columns: 1FR 1FR 1FR;
   }
+ 
   #projets .projets-item{
     display: grid;
-    grid-template-rows: 4em 1FR 80px;
+    grid-template-rows: 4em 1FR;
     justify-content: center;
   }
   #projets .projets-item .nameprojets{
@@ -353,21 +389,62 @@ i {
     }#projets .projets-item img{
       width: 100%;
       border: 15px solid black;
+      box-shadow:0 30px 60px rgba(0,0,0,.4);
+      transition: all 0.7s ease-in-out;
     }#projets .projets-item p{
       text-align: center;
       color: black;
       background: white;
       padding: 5px;
     }
+    .projets-item:hover
+    {
+      transform: scale(1.1);
+      transition: 0.7s;
+    }
 
+/* GHOST  GHOST  GHOST  GHOST  GHOST  GHOST  GHOST  GHOST  GHOST  GHOST  */
 
-
+    .ghost {
+      width: 8vmin;
+      height: 12vmin;
+      background-color: #e7e6e6;
+      background-image: radial-gradient(ellipse at 35% 40%, #000 8%, transparent 0%),
+        radial-gradient(ellipse at 65% 40%, #000 8%, transparent 0%),
+        radial-gradient(ellipse at 50% 60%, #000 8%, transparent 0%);
+      border-radius: 100% / 70% 70% 0% 0%;
+      transform: translateX(100em) rotateZ(-90deg);
+      opacity: 0.9;
+      animation: ghostMove 4s ease-out infinite;
+    }
+    @keyframes ghostMove {
+      0% {
+        transform: translateX(30em) rotateZ(-90deg);
+      }
+      100% {
+        transform: translateX(-25em) rotateZ(-90deg);
+      }
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+    
+    .title {
+      position: absolute;
+    }
+    .title h2 {
+      font-size: 25vmin;
+      font-weight: 900;
+      font-family: "Montserrat", sans-serif;
+      color: black;
+    }
 
 /* FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  FOOTER  */
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
- 
+
  
   .footer {
     display: flex;
@@ -376,10 +453,6 @@ i {
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
-  }
-  
-  .footer > * {
-    flex:  1 100%;
   }
   
   .footer__addr {
