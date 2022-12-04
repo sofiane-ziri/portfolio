@@ -88,7 +88,7 @@ body p {
 }
 
 body .parallax {
-  min-height: 350px;
+  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -426,7 +426,7 @@ i {
       }
     }
     .container {
-      width: 100%;
+      padding: 18%;
       height: 100%;
       display: grid;
       place-items: center;
